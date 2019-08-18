@@ -17,8 +17,17 @@ public class ProgramacionOO {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Persona caro = new Persona(); //New se refiere a un nuevo objeto 
+        Persona caro = new Persona("Carolina Llamas",
+                                   19, 1.6, 70.2,
+                                   "Femenino"); //New se refiere a un nuevo objeto 
+        /*Ctrl + shift + down/up permite duplicar la línea  
+        //Los breakpoint se ponen en especifico donde se necesita detener el código*/
+        caro.nombre = "Carola";
+        
         System.out.println("Hey");
+        
+ 
+                
     }
     
 }
