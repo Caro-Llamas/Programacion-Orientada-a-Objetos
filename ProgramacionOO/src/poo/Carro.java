@@ -25,4 +25,24 @@ public class Carro {
         this.peso = peso;
         this.tamaño = tamaño;
     }
+    
+    public String getColor(){
+        return this.color;
+    }
+    public double getTamaño(){
+        return this.tamaño;
+    }
+    public double getPeso(){
+        return this.peso; 
+    }
+    
+    public void setColor(String color){
+        this.color = color;
+    }
+    public void setTamaño(double tamaño){
+         this.tamaño = tamaño;
+    }
+    public void setPeso(double peso){
+        this.peso = peso;        
+    }
 }
