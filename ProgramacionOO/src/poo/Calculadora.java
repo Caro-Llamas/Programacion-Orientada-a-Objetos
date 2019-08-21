@@ -10,9 +10,10 @@ package poo;
  * @author usuario
  */
 public class Calculadora {
-    public double precio;
-    public double entrada;
-    public double salida;
+    private
+         double precio;
+         double entrada;
+         double salida;
     
     public Calculadora(){
         this.entrada = 0.0;
@@ -24,5 +25,25 @@ public class Calculadora {
         this.entrada = entradas;
         this.precio = precio;
         this.salida = salida;
+    }
+    
+    public double getPrecio(){
+        return this.precio;
+    }
+    public double getEntrada(){
+        return this.entrada;
+    }
+    public double getSalida(){
+        return this.salida; 
+    }
+    
+    public void setPrecio(double precio){
+        this.precio = precio;
+    }
+    public void setEntrada(double entrada){
+         this.entrada = entrada;
+    }
+    public void setSalida(double salida){
+        this.salida = salida;        
     }
 }

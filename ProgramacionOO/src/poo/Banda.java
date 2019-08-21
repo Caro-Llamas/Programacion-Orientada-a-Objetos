@@ -10,9 +10,9 @@ package poo;
  * @author usuario
  */
 public class Banda {
-    public int miembros;
-    public String canciones;
-    public String nombre;
+    private int miembros;
+    private String canciones;
+    private String nombre;
     
     public Banda(){
         this.miembros = 0;
@@ -26,4 +26,23 @@ public class Banda {
         this.nombre = nombre;
     }
     
+    public int getMiembros(){
+        return this.miembros;
+    }
+    public String getCanciones(){
+        return this.canciones;
+    }
+    public String getNombre(){
+        return this.nombre;
+    }
+    
+    public void setMiembros(int miembros){
+        this.miembros = miembros;
+    }
+    public void setCanciones(String canciones){
+        this.canciones = canciones;
+    }
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }
 }

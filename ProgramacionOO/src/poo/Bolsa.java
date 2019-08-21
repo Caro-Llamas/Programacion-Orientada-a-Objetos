@@ -10,9 +10,9 @@ package poo;
  * @author usuario
  */
 public class Bolsa {
-    public String tamaño;
-    public String forma;
-    public String color;
+    private String tamaño;
+    private String forma;
+    private String color;
     
     public Bolsa(){
         this.tamaño = "";
@@ -25,4 +25,27 @@ public class Bolsa {
         this.forma = forma;
         this.color = color;
     }
+    
+    public String getTamaño(){
+        return this.tamaño;
+    }
+    public String getForma(){
+        return this.forma;
+    }
+    public String getColor(){
+        return this.forma;
+        
+    }
+    
+    public void setTamaño(String tamaño)
+    {
+        this.tamaño = tamaño;
+    }
+    public void setForma(String forma){
+         this.forma = forma;
+    }
+    public void setColor(String color){
+        this.color = color;        
+    }
 }
+

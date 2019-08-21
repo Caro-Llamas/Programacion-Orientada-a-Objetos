@@ -10,9 +10,9 @@ package poo;
  * @author usuario
  */
 public class Alumno {
-    public int boleta;
-    public String nombre;
-    public String contraseña;
+    private int boleta;
+    private String nombre;
+    private String contraseña;
     
     public Alumno(){
         this.boleta = 0;
@@ -25,5 +25,27 @@ public class Alumno {
         this.nombre = nombre;
         this.contraseña = contraseña;
         
+    }
+    
+    public int getBoleta(){
+        return this.boleta;
+    }
+    
+    public String getNombre(){
+        return this.nombre;
+    }
+    
+    public String getContraseña(){
+        return this.contraseña;
+    }
+    
+    public void setBoleta(int boleta){
+        this.boleta = boleta;
+    }
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }
+    public void setContraseña(String contraseña){
+        this.contraseña = contraseña;
     }
 }

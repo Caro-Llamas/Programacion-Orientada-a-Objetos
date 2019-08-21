@@ -10,9 +10,10 @@ package poo;
  * @author usuario
  */
 public class Botella {
-    public String color;
-    public double altura;
-    public double capacidad;
+    private
+        String color;
+        double altura;
+        double capacidad;
     
     public Botella(){
         this.color = "";
@@ -24,5 +25,25 @@ public class Botella {
         this.color = color;
         this.altura = altura;
         this.capacidad = capacidad;
+    }
+    
+    public String getColor(){
+        return this.color;
+    }
+    public double getAltura(){
+        return this.altura;
+    }
+    public double getCapacidad(){
+        return this.capacidad; 
+    }
+    
+    public void setColor(String color){
+        this.color = color;
+    }
+    public void setAltura(double altura){
+         this.altura = altura;
+    }
+    public void setCapacidad(double capacidad){
+        this.capacidad = capacidad;        
     }
 }

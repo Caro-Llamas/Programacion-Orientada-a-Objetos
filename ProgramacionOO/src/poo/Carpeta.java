@@ -10,9 +10,10 @@ package poo;
  * @author usuario
  */
 public class Carpeta {
-    public String color;
-    public String forma;
-    public double peso;
+    private
+        String color;
+        String forma;
+        double peso;
     
     public Carpeta(){
         this.color = "";
@@ -24,5 +25,25 @@ public class Carpeta {
         this.color = color;
         this.forma = forma;
         this.peso = peso;
+    }
+    
+    public String getColor(){
+        return this.color;
+    }
+    public String getForma(){
+        return this.forma;
+    }
+    public double getPeso(){
+        return this.peso; 
+    }
+    
+    public void setColor(String color){
+        this.color = color;
+    }
+    public void setForma(String forma){
+         this.forma = forma;
+    }
+    public void setPeso(double peso){
+        this.peso = peso;        
     }
 }
