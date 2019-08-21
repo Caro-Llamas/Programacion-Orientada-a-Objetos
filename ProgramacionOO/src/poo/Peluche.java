@@ -11,9 +11,9 @@ package poo;
  */
 public class Peluche {
     //atributos
-    public String relleno;
-    public String nombre;
-    public double precio;
+    private String relleno;
+    private String nombre;
+    private double precio;
     
     //métodos
     public Peluche(){
@@ -27,5 +27,25 @@ public class Peluche {
         this.nombre = nombre;
         this.precio = precio;
         
+    }
+    
+     public String getRelleno(){
+        return this.relleno;
+    }
+    public String getNombre(){
+        return this.nombre;
+    }
+    public double getPrecio(){
+        return this.precio; 
+    }
+    
+    public void setRelleno(String relleno){
+        this.relleno = relleno;
+    }
+    public void setNombre(String nombre){
+         this.nombre = nombre;
+    }
+    public void setPrecio(double precio){
+        this.precio = precio;        
     }
 }

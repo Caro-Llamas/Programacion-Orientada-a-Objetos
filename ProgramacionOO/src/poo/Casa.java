@@ -10,9 +10,9 @@ package poo;
  * @author usuario
  */
 public class Casa {
-    public int cuartos;
-    public int pisos;
-    public double tamaño;
+    private int cuartos;
+    private int pisos;
+    private double tamaño;
     
     public Casa(){
         this.cuartos = 0;
@@ -24,5 +24,25 @@ public class Casa {
         this.cuartos = cuartos;
         this.pisos = pisos;
         this.tamaño = tamaño;
+    }
+    
+    public int getCuartos(){
+        return this.cuartos;
+    }
+    public int getPisos(){
+        return this.pisos;
+    }
+    public double getTamaño(){
+        return this.tamaño; 
+    }
+    
+    public void setCuartos(int cuartos){
+        this.cuartos = cuartos;
+    }
+    public void setPisos(int pisos){
+         this.pisos = pisos;
+    }
+    public void setTamaño(double tamaño){
+        this.tamaño = tamaño;        
     }
 }

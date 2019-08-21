@@ -10,9 +10,9 @@ package poo;
  * @author usuario
  */
 public class Chancla {
-    public String forma;
-    public String color;
-    public double peso;
+    private String forma;
+    private String color;
+    private double peso;
     
     public Chancla(){
         this.forma = "";
@@ -24,5 +24,25 @@ public class Chancla {
         this.forma = forma;
         this.color = color;
         this.peso = peso;
+    }
+    
+    public String getColor(){
+        return this.color;
+    }
+    public String getForma(){
+        return this.forma;
+    }
+    public double getPeso(){
+        return this.peso; 
+    }
+    
+    public void setColor(String color){
+        this.color = color;
+    }
+    public void setForma(String forma){
+         this.forma = forma;
+    }
+    public void setPeso(double peso){
+        this.peso = peso;        
     }
 }

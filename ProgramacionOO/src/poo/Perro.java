@@ -10,9 +10,9 @@ package poo;
  * @author usuario
  */
 public class Perro {
-    public String nombre;
-    public double peso;
-    public String raza;
+    private String nombre;
+    private double peso;
+    private String raza;
     
     public Perro(){
         this.nombre = "";
@@ -25,5 +25,25 @@ public class Perro {
         this.peso = peso;
         this.raza = raza;
         
+    }
+    
+     public String getNombre(){
+        return this.nombre;
+    }
+    public String getRaza(){
+        return this.raza;
+    }
+    public double getPeso(){
+        return this.peso; 
+    }
+    
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }
+    public void setRaza(String raza){
+         this.raza = raza;
+    }
+    public void setPeso(double peso){
+        this.peso = peso;        
     }
 }

@@ -10,9 +10,9 @@ package poo;
  * @author usuario
  */
 public class Videojuego {
-    public double controles;
-    public int niveles;
-    public String personaje;
+    private double controles;
+    private int niveles;
+    private String personaje;
     
     public Videojuego(){
         this.controles = 0.0;
@@ -24,5 +24,25 @@ public class Videojuego {
         this.controles = controles;
         this.niveles = niveles;
         this.personaje = personaje;
+    }
+    
+    public double getControles(){
+        return this.controles;
+    }
+    public int getNiveles(){
+        return this.niveles;
+    }
+    public String getPersonaje(){
+        return this.personaje; 
+    }
+    
+    public void setControles(double controles){
+        this.controles = controles;
+    }
+    public void setNiveles(int niveles){
+         this.niveles = niveles;
+    }
+    public void setPersonaje(String personaje){
+        this.personaje = personaje;        
     }
 }

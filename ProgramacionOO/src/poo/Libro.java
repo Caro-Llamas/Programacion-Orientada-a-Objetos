@@ -10,9 +10,9 @@ package poo;
  * @author usuario
  */
 public class Libro {
-    public int paginas;
-    public double peso;
-    public String genero;
+    private int paginas;
+    private double peso;
+    private String genero;
     
     public Libro(){
         this.paginas = 0;
@@ -24,5 +24,25 @@ public class Libro {
         this.paginas = paginas;
         this.peso = peso;
         this.genero = genero;
+    }
+    
+    public int getPaginas(){
+        return this.paginas;
+    }
+    public double getPeso(){
+        return this.peso;
+    }
+    public String getGenero(){
+        return this.genero; 
+    }
+    
+    public void setPaginas(int paginas){
+        this.paginas = paginas;
+    }
+    public void setPeso(double peso){
+         this.peso = peso;
+    }
+    public void setGenero(String genero){
+        this.genero = genero;        
     }
 }

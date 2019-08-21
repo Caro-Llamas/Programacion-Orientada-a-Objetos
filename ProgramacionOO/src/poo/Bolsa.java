@@ -33,7 +33,7 @@ public class Bolsa {
         return this.forma;
     }
     public String getColor(){
-        return this.forma;
+        return this.color;
         
     }
     

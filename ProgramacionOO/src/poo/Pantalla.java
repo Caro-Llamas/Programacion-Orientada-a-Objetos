@@ -10,9 +10,9 @@ package poo;
  * @author usuario
  */
 public class Pantalla {
-    public String color; 
-    public double peso;
-    public String tamaño;
+    private String color; 
+    private double peso;
+    private String tamaño;
     
     public Pantalla(){
         this.color = "";
@@ -24,5 +24,25 @@ public class Pantalla {
         this.color = color;
         this.peso = peso;
         this.tamaño = tamaño;
+    }
+    
+     public String getColor(){
+        return this.color;
+    }
+    public String getTamaño(){
+        return this.tamaño;
+    }
+    public double getPeso(){
+        return this.peso; 
+    }
+    
+    public void setColor(String color){
+        this.color = color;
+    }
+    public void setTamaño(String tamaño){
+         this.tamaño = tamaño;
+    }
+    public void setPeso(double peso){
+        this.peso = peso;        
     }
 }

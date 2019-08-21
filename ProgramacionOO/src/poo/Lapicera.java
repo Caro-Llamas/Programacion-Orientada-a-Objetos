@@ -10,9 +10,9 @@ package poo;
  * @author usuario
  */
 public class Lapicera {
-    public String color;
-    public String tamaño;
-    public String marca;
+    private String color;
+    private String tamaño;
+    private String marca;
     
     public Lapicera(){
         this.color = "";
@@ -24,6 +24,26 @@ public class Lapicera {
         this.color = color;
         this.tamaño = tamaño;
         this.marca = marca;
+    }
+    
+     public String getColor(){
+        return this.color;
+    }
+    public String getTamaño(){
+        return this.tamaño;
+    }
+    public String getMarca(){
+        return this.marca; 
+    }
+    
+    public void setColor(String color){
+        this.color = color;
+    }
+    public void setTamaño(String tamaño){
+         this.tamaño = tamaño;
+    }
+    public void setMarca(String marca){
+        this.marca = marca;        
     }
 }
 

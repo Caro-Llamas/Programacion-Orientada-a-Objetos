@@ -11,9 +11,9 @@ package poo;
  */
 public class Planta {
     //atributos
-    public double humedad;
-    public double luz_recibida;
-    public String tipo;
+    private double humedad;
+    private double luz_recibida;
+    private String tipo;
     
     //métodos
     public Planta(){
@@ -28,5 +28,25 @@ public class Planta {
         this.humedad = humedad;
         this.luz_recibida = luz;
         this.tipo = tipo;
+    }
+    
+     public double getHumedad(){
+        return this.humedad;
+    }
+    public double getLuz_recibida(){
+        return this.luz_recibida;
+    }
+    public String getTipo(){
+        return this.tipo; 
+    }
+    
+    public void setHumedad(double humedad){
+        this.humedad = humedad;
+    }
+    public void setLuz_recibida(double luz_recibida){
+         this.luz_recibida = luz_recibida;
+    }
+    public void setTipo(String tipo){
+        this.tipo = tipo;        
     }
 }

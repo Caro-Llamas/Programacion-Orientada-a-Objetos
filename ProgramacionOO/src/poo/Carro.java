@@ -10,9 +10,9 @@ package poo;
  * @author usuario
  */
 public class Carro {
-    public String color;
-    public double peso;
-    public double tamaño;
+    private String color;
+    private double peso;
+    private double tamaño;
     
     public Carro(){
         this.color = "";
