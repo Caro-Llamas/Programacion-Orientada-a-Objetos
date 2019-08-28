@@ -46,4 +46,26 @@ public class Gato {
     public void setTamaño(String tamaño){
         this.tamaño = tamaño;        
     }
+    
+    @Override
+    public String toString(){
+        return nombre+" "+raza+" "+tamaño;
+    }
+    
+    @Override
+    public boolean equals(Gato o) {
+        // self check
+        if (this == o)
+            return true;
+        // null check
+        if (o == null)
+            return false;
+        // type check and cast
+        if (getClass() != o.getClass())
+            return false;
+        Gato gato = (Gato) o;
+        // field comparison
+        return Objects.equals(firstName, person.firstName)
+                && Objects.equals(lastName, person.lastName);
+    }
 }
