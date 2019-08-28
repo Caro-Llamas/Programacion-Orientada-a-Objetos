@@ -5,11 +5,38 @@
  */
 package poo;
 
+import java.util.Objects;
+
 /**
  *
  * @author usuario
  */
 public class Gato {
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 79 * hash + Objects.hashCode(this.nombre);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Gato other = (Gato) obj;
+        if (!Objects.equals(this.nombre, other.nombre)) {
+            return false;
+        }
+        return true;
+    }
     private String nombre;
     private String raza;
     private String tamaño;
@@ -52,21 +79,6 @@ public class Gato {
         return nombre+" "+raza+" "+tamaño;
     }
     
-    @Override
-    public boolean equals(Gato o) {
-        // self check
-        if (this == o)
-            return true;
-        // null check
-        if (o == null)
-            return false;
-        // type check and cast
-        if (getClass() != o.getClass())
-            return false;
-        Gato gato = (Gato) o;
-        // field comparison
-        return Objects.equals(firstName, person.firstName)
-                && Objects.equals(lastName, person.lastName);
-    }
+    
     
 }
