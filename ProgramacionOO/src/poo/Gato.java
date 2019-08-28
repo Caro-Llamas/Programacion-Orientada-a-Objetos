@@ -68,4 +68,5 @@ public class Gato {
         return Objects.equals(firstName, person.firstName)
                 && Objects.equals(lastName, person.lastName);
     }
+    
 }
