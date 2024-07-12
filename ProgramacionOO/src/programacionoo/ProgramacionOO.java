@@ -90,7 +90,7 @@ public class ProgramacionOO {
         
        
      
-        System.out.println("Hey");
+        System.out.println(caro.nombre);
         
  
                 
