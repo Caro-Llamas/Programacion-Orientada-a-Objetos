@@ -88,9 +88,9 @@ public class ProgramacionOO {
         /*  -Un método constructor crea un objeto en memoria 
             -Inicializa valores */
         
-       
+        
      
-        System.out.println("Hey");
+        System.out.println(tloz.getPersonaje());
         
  
                 
