@@ -42,7 +42,7 @@ public class ProgramacionOO {
                                    "Femenino"); //New se refiere a un nuevo objeto 
         /*Ctrl + shift + down/up permite duplicar la línea  
         //Los breakpoint se ponen en especifico donde se necesita detener el código*/
-        caro.nombre = "Carola";
+        caro.nombre = "Carolina";
         
         //Objetos
         Alumno a1 = new Alumno(201532453, "Alonso Martínez", "123456@");
